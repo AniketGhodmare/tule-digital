@@ -141,7 +141,7 @@ img {
 }
 
 .hero {
-    background-image: url(/img/wallpaper.jpg);
+    background-image: url(img/wallpaper.jpg);
     width: 100%;
     min-height: 80%;
     background-repeat: no-repeat;
