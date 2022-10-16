@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ................navbar................ */
+.navbar {
+    background-color: black;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.footer ul {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer ul a,
+.copy,
+.contact-heading,
+.copy a {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: #b2e90a;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    right: 0;
+    height: 3px;
+    margin-top: 1px;
+    background: #b2e90a;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.bars {
+    cursor: pointer;
+    color: #b2e90a;
+    font-size: 2rem;
+    display: none;
+    padding: 5px;
+    border: 2px solid #b2e90a;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+/* ..............responsive .navbar....... */
+.resp-menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: 1rem;
+}
+
+.reg-menu {
+    position: relative;
+}
+
+#menu {
+    display: none;
+}
+
+#cross {
+    padding: 0px 3px;
+}
+
+.bars {
+    width: 45px;
+    text-align: center;
+}
+
+
+
+.logo-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.name {
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.hero {
+    background-image: url(/img/wallpaper.jpg);
+    width: 100%;
+    min-height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero p {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.hero img {
+    width: 250px;
+}
+
+.headind {
+    font-size: 90px;
+    text-shadow: 2px 2px #b2e90a;
+}
+
+.cursive-heading {
+    font-family: 'Pacifico', cursive;
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.tagline {
+    font-size: 43px;
+    text-shadow: 1px 1px #b2e90a;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+/* ..........section-heading......... */
+.section-heading {
+    text-align: center;
+    font-size: 55px;
+    margin: 15px auto;
+    /* color: #b2e90a; */
+}
+
+.cursive-heading {
+    margin: 27px 0px;
+    font-size: 26px;
+}
+
+/* ..........about...... */
+.section {
+    width: 90%;
+    margin: 30px auto;
+    min-width: 400px;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-left,
+.about-right,
+.left-contact,
+.right-contact {
+    width: 49%;
+    min-width: 400px;
+    padding: 15px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.left-contact,
+.right-contact {
+    flex-direction: row;
+}
+
+.about-right p {
+    font-family: sans-serif;
+    color: grey;
+    font-size: 20px;
+    margin: 25px auto;
+    text-align: justify;
+}
+
+
+/* ................services................. */
+.services,
+.Project,
+.contact,
+.footer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .............services-card............. */
+.card {
+    background-color: #f5f6fa;
+    width: 305px;
+    border: 0.3px solid #afa1a1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 0px grey;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 1px 8px 20px grey;
+}
+
+.card-img {
+    width: 290px;
+    height: 290px;
+}
+
+.card-img img {
+    height: 100%;
+}
+
+.card h3 {
+    margin: 25px auto;
+    color: red;
+}
+
+/* ...........contact........... */
+.con-block,
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3.5px solid #b2e90a;
+    padding-right: 25px;
+    color: grey;
+    min-width: 300px;
+}
+
+.footer-item {
+    gap: 15px;
+    align-items: flex-start;
+    min-width: 120px;
+}
+
+.no-border {
+    border: none;
+}
+
+.con-block a {
+    color: rgb(79, 79, 113);
+    transition: all 0.5s;
+}
+
+.con-block a:hover {
+    color: blue;
+}
+
+.con-block i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.con-block h3 {
+    margin: 10px auto;
+}
+
+
+/* .............contact form............ */
+.form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 95%;
+}
+
+.form-input {
+    display: block;
+    width: 85%;
+    height: 3rem;
+    margin: auto;
+    padding: 6px;
+    border-radius: 5px;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    border: none;
+    outline: 3px solid #b2e90a;
+}
+
+.btn {
+    width: 100px;
+    margin: auto;
+    border: none;
+    background-color: #b2e90a;
+    padding: 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #a5d407;
+
+}
+
+.contact-heading {
+    margin-bottom: 1.3rem;
+}
+
+/* ...........footer........... */
+
+.footer-head {
+    background-color: black;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    justify-content: space-evenly;
+}
+
+.social-link {
+    gap: 20px;
+    display: flex;
+}
+
+.social-link i {
+    font-size: 1.7rem;
+    transition: all 0.5s;
+    color: gray;
+}
+
+.social-link i:hover,
+.copy a:hover {
+    color: #b2e90a;
+}
+
+
+/* ....... whatsaap icon............ */
+.whatsapp {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+}
+
+.whatsapp i {
+    font-size: 1.5rem;
+}
+
+.whatsapp:hover i {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 935px) {
+
+    /* For tablet screen: */
+    .bars {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding-top: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (min-width: 936px) and (max-width: 1025px) {
+
+    /* For desktop screen: */
+    .section,
+    .nav {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .hero img {
+        width: 150px;
+    }
+
+    .headind {
+        font-size: 70px;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    .menu {
+        display: block;
+    }
+}
