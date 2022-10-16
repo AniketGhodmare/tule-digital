@@ -106,11 +106,12 @@ a {
 }
 
 #menu {
-    display: none;
+    display: block;
 }
 
 #cross {
     padding: 0px 3px;
+    display: none;
 }
 
 .bars {
@@ -451,6 +452,9 @@ img {
         width: 70%;
         margin: auto;
         padding-bottom: 1rem;
+    }
+    .con-block{
+        border: none;
     }
 }
 
